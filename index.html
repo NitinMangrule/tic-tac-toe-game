@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+        .container {
+            background: #ddd;
+            height: 122px;
+            width: 152px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 51px);
+        }
+
+        .main>div {
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .item {}
+
+        .item-1,
+        .item-2,
+        .item-7,
+        .item-8 {
+            border-right: 1px solid black;
+        }
+
+        .item-4,
+        .item-5 {
+            border: 1px solid black;
+            border-left: none;
+        }
+
+        .item-6 {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .green {
+            background: green;
+        }
+
+        .red {
+            background: red;
+        }
+    </style>
+    <title>JS</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main" id="wrapper">
+            <div class="item item-1" id="0">
+    
+            </div>
+            <div class="item item-2" id="1">
+    
+            </div>
+            <div class="item item-3" id="2">
+    
+            </div>
+            <div class="item item-4" id="3">
+    
+            </div>
+            <div class="item item-5" id="4">
+    
+            </div>
+            <div class="item item-6" id="5">
+    
+            </div>
+            <div class="item item-7" id="6">
+    
+            </div>
+            <div class="item item-8" id="7">
+    
+            </div>
+            <div class="item item-9" id="8">
+    
+            </div>
+    
+        </div>
+    </div>
+    
+</body>
+
+<script src="./index.js"></script>
+</script>
+</body>
+
+</html>
