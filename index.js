@@ -35,12 +35,11 @@ function reset() {
         item.classList.remove('green');
     })
 }
-function successDisplay() {
+function successDisplay(type) {
     setTimeout(() => {
-        alert('Winner..');
+        alert(`Winner is ..${type}`);
         reset();
     }, 0);
-
 }
 function validate(type) {
     let flag;
@@ -55,6 +54,6 @@ function validate(type) {
         }
     });
     if (flag) {
-        successDisplay();
+        successDisplay(type);
     }
 }
